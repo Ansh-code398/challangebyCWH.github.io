@@ -51,7 +51,13 @@
                 alert("Reload the page and Enter a valid age.");
                 console.log("Reload the page and Enter a valid age.");
                 let doc = document.getElementById('welcome');
-            doc.innerHTML = ` <p> Reload this page and enter a valid age. </p> `
+                doc.innerHTML = ` <p> Reload this page and enter a valid age. </p> `
+            }
+            else if(age > 100){
+            alert("Reload this page and enter the valid age");
+             console.log('Reload this page and enter a valid age');   
+                let doc = document.getElementById('welcome');
+                doc.innerHTML = `<p>Reload this page and enter a valid age.  </p>`;
             }
             else{
                 alert("Reload the page and Enter a valid age.");
