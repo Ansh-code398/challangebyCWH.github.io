@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+<style>
+    #welcome{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        margin: 0;
+        color: #ffffff;
+        background-color: #000;
+        font-weight: bold;
+        font-family: cursive;
+        font-size: 4rem;
+
+    }
+img{
+ display: block;
+ justify-content: center;
+ align-items: center;
+ padding; 50px;
+ margin; 0px;
+}
+a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        margin: 0px;
+        color: #ffffff;
+        background-color: #000000;
+        font-weight: bold;
+        font-family: cursive;
+        font-size: 4rem;
+        Text-decoration: none;
+}
+
+</style>
+<body>
+    <div id="welcome"></div>
+
+    <script>
+        let age = prompt("What is your age", "Only Number");
+        let ask = confirm("Do you want to continue"); 
+        if(ask===true)
+        {
+            if(age > 17 && age < 100)
+            {
+                alert("your age is " + age);
+                console.log("your age is " + age);
+                alert("Welcome to our club");
+                console.log("Welcome to our club");
+                let doc = document.getElementById('welcome');
+            doc.innerHTML = ` <img src="https://3.bp.blogspot.com/-hZSzCW8Ad5Q/YDCfl1mF9NI/AAAAAAAAKBo/gagPco6cE9Y-ac9OFiz__85j8Gme5Vt6gCK4BGAYYCw/s1024/Black%2Band%2BRed%2BLaser%2BGames%2BLogo.png" alt="welcome"></img> <br><br><br><a href="https://youtube.com/channel/UC0MVed-rXE_H8xle05sp91A" target="_blank"> Click here to visit my youtube channel</a> `;
+                      
+            }
+            else if (age < 18 && age > 0){
+                alert("your age is " + age);
+                alert("You Need to be atleast 18 to join this club");
+                console.log("You Need to be atleast 18 to join this club");
+                let doc = document.getElementById('welcome');
+            doc.innerHTML = ` <p> You need to be atleast 18 to join this club </p> `
+            }
+            else if (age < 1){
+                alert("Reload the page and Enter a valid age.");
+                console.log("Reload the page and Enter a valid age.");
+                let doc = document.getElementById('welcome');
+                doc.innerHTML = ` <p> Reload this page and enter a valid age. </p> `
+            }
+           
+            else{
+                alert("Reload the page and Enter a valid age.");
+                console.log("Reload the page and Enter a valid age.");
+                let doc = document.getElementById('welcome');
+            doc.innerHTML = ` <p> Reload this page and enter a valid age. </p> `
+            }
+
+
+        }
+        else{
+            alert("You cancled your request, reload this page to make request again");
+            console.log("You cancled your request, reload this page to make request again");
+            let doc = document.getElementById('welcome');
+            doc.innerHTML = ` <p> You cancled your request, reload this page to make request again </p> `;
+        }
+        
+
+    </script>
+</body>
+</html>
