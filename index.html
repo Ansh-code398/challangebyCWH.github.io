@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,12 +24,12 @@
 img{
  display: block;
  padding; 50px;
- margin; 0px;
+ margin; 50px;
 }
 a{
         display: block;
         padding: 50px;
-        margin: 0px;
+        margin: 50px;
         color: #ffffff;
         background-color: #000000;
         font-weight: bold;
@@ -40,7 +41,7 @@ a{
 </style>
 <body>
     <div id="welcome"></div>
-
+    <div id="welcome-link"></div>
     <script>
         let age = prompt("What is your age", "Only Number");
         let ask = confirm("Do you want to continue"); 
@@ -53,8 +54,10 @@ a{
                 alert("Welcome to our club");
                 console.log("Welcome to our club");
                 let doc = document.getElementById('welcome');
-            doc.innerHTML = ` <img src="https://3.bp.blogspot.com/-hZSzCW8Ad5Q/YDCfl1mF9NI/AAAAAAAAKBo/gagPco6cE9Y-ac9OFiz__85j8Gme5Vt6gCK4BGAYYCw/s1024/Black%2Band%2BRed%2BLaser%2BGames%2BLogo.png" alt="welcome"></img> <br><br><br><a href="https://youtube.com/channel/UC0MVed-rXE_H8xle05sp91A" target="_blank"> Click here to visit my youtube channel</a> `;
-                      
+                doc.innerHTML = ` <img src="https://3.bp.blogspot.com/-hZSzCW8Ad5Q/YDCfl1mF9NI/AAAAAAAAKBo/gagPco6cE9Y-ac9OFiz__85j8Gme5Vt6gCK4BGAYYCw/s1024/Black%2Band%2BRed%2BLaser%2BGames%2BLogo.png" alt="welcome"></img> ` 
+                let link = document.getElementById('welcome-link');
+                link.innerHTML = `<a href="https://youtube.com/channel/UC0MVed-rXE_H8xle05sp91A" target="_blank"> Click here to visit my youtube channel </a> `
+
             }
             else if (age < 18 && age > 0){
                 alert("your age is " + age);
