@@ -30,7 +30,7 @@
         let ask = confirm("Do you want to continue"); 
         if(ask===true)
         {
-            if(age > 17)
+            if(age > 17 && age < 100)
             {
                 alert("your age is " + age);
                 console.log("your age is " + age);
@@ -53,12 +53,7 @@
                 let doc = document.getElementById('welcome');
                 doc.innerHTML = ` <p> Reload this page and enter a valid age. </p> `
             }
-            else if(age > 100){
-            alert("Reload this page and enter the valid age");
-             console.log('Reload this page and enter a valid age');   
-                let doc = document.getElementById('welcome');
-                doc.innerHTML = `<p>Reload this page and enter a valid age.  </p>`;
-            }
+           
             else{
                 alert("Reload the page and Enter a valid age.");
                 console.log("Reload the page and Enter a valid age.");
